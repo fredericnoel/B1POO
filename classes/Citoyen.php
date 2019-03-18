@@ -13,6 +13,16 @@ class Citoyen implements Habitant
         Log::logWrite($message);
     }
 
+    public function __get($toto)
+    {
+        return "La propriété $toto n'existe pas !";
+    }
+
+    public function __set($toto, $valeur)
+    {
+        return "La propriété $toto ne peut contenir la valeur $valeur";
+    }
+
     public function setAdresse($numero, $rue, $cp, $ville)
     {
         $this->numero = $numero;
