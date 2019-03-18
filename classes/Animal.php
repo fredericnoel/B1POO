@@ -1,7 +1,8 @@
 <?php
 
-class Animal
+abstract class Animal
 {
+    const VIVANT = true;
     protected $masse;
     protected $embranchement;
     protected $classe;
@@ -9,7 +10,7 @@ class Animal
     protected $sexe;
     protected $metabolisme;//Cycle normal, reproduction, hibernation
 
-    public function seReproduire()
+    public function seReproduire() : string
     {
         return "Reproduction";
     }
