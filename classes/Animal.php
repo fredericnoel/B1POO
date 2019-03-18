@@ -2,12 +2,12 @@
 
 class Animal
 {
-    private $masse;
-    private $embranchement;
-    private $classe;
-    private $nbrePattes;
-    private $sexe;
-    private $metabolisme;//Cycle normal, reproduction, hibernation
+    protected $masse;
+    protected $embranchement;
+    protected $classe;
+    protected $nbrePattes;
+    protected $sexe;
+    protected $metabolisme;//Cycle normal, reproduction, hibernation
 
     public function seReproduire()
     {
@@ -114,6 +114,4 @@ class Animal
     {
         $this->metabolisme = $metabolisme;
     }
-
-
 }
